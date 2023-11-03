@@ -20,6 +20,8 @@ function Creations() {
       <CreationCard image="/image-curiosity.jpg" title="THE CURIOSITY" />
 
       <CreationCard image="/image-fisheye.jpg" title="MAKE IT FISHEYE" />
+
+      <button className="border tracking-widest font-semibold border-black w-40 h-10 mt-2">SEE ALL</button>
     </div>
   )
 }
