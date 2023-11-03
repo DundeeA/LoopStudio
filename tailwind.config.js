@@ -9,6 +9,7 @@ export default {
       },
       backgroundImage: {
         heroimage: "url('/src/assets/image-hero.jpg')",
+        hamburgericon: "url('/src/assets/icon-hamburger.svg')",
       },
     },
   },
