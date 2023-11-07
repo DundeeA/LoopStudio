@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="min-w-screen bg-black h-[70vh] mt-[14.5vh] pt-11 flex flex-col items-center ">
+    <footer className="min-w-screen bg-black mt-[14.5vh] pt-11 pb-14 flex flex-col items-center ">
       <p className="font-Alata font-medium text-[1.75rem] text-white">loopstudios</p>
 
       <ul className="mt-7 text-center">
