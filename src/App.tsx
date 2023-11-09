@@ -5,12 +5,12 @@ import Footer from "./components/footer/Footer"
 function App() {
   return (
     <>
-      <main className="overflow-x-hidden">
-        <Hero />
+      <Hero />
+      <main>
         <SubHero />
         <Creations />
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
