@@ -1,9 +1,9 @@
-import image from "../../assets/image-interactive.jpg"
+import image from "/image-interactive.jpg"
 
 function SubHero() {
   return (
-    <section className="w-min-screen flex flex-col items-center justify-center">
-      <div className="w-[20rem] lg:w-[70rem] md:w-[50rem] relative">
+    <section className="w-min-screen flex flex-col items-center justify-center ">
+      <div className="w-[20rem] lg:w-[70rem] md:w-[50rem] relative md:h-[51.5rem]">
         <img src={image} alt="" className="relative  lg:w-[46rem] md:mt-40 md:w-[35rem]  mt-24  w-[20.5rem]" />
 
         <div
