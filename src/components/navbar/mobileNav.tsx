@@ -3,8 +3,8 @@ import { useLockBodyScroll } from "@uidotdev/usehooks"
 function MobileNav() {
   useLockBodyScroll()
   return (
-    <div className="w-screen h-screen bg-black z-3  left-0 top-0 absolute">
-      <ul className="text-whit flex gap-[1.03rem] flex-col text-[1.4rem]  text-white tracking-[.15rem] mt-[56%] pl-6">
+    <div className="w-screen h-screen bg-black z-3  left-0 top-0 absolute ">
+      <ul className="flex gap-[1.03rem] flex-col text-[1.4rem]  text-white tracking-[.15rem] mt-[56%] smd:mt-[25%] smd:pl-10 pl-6">
         <li>
           <a href="#" aria-label="About loop studio">
             ABOUT
