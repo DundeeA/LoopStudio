@@ -14,7 +14,10 @@ function NavBar() {
   ]
 
   return (
-    <nav className="flex flex-row justify-between items-center w-[100%]">
+    <nav
+      className="flex flex-row justify-between items-center w-[100%]  
+      animate-fade-down animate-duration-[600ms] animate-delay-0 animate-ease-in
+    ">
       <p className="font-Alata font-medium text-[1.75rem] md:text-[2.3rem]  2xl:text-[3.2rem] z-10  text-white">loopstudios</p>
 
       <button

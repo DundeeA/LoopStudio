@@ -15,7 +15,6 @@ This is my solution to the [Loopstudios landing page challenge](https://www.fron
 - React
 - Tailwind
 - Typescript
-- FramerMotion
 - Mobile first design
 
 ## Author
