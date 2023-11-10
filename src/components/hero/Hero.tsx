@@ -2,7 +2,7 @@ import NavBar from "../navbar/Navbar"
 
 function Hero() {
   return (
-    <header className="h-[97.5vh] bg-cover bg-heroimage pt-7 flex flex-col items-center md:h-[80vh] md:bg-largeheroimage md:pt-11 ">
+    <header className="h-[97.5vh] bg-cover bg-heroimage pt-7 flex flex-col items-center md:h-[80vh] md:bg-largeheroimage md:pt-11">
       <div className=" w-[87.5vw] lg:w-[77.5vw] md:block flex flex-col items-center">
         <NavBar />
         <h1
