@@ -5,7 +5,9 @@ function Creations() {
     <section className="mt-20 md:mt-0 pt-1 flex flex-col items-center w-full">
       <div className="w-full md:flex md:justify-between md:items-center md:w-[77%]">
         <h2 className="text-center font-thin  text-[2.3rem] md:text-[3.2rem]">OUR CREATIONS</h2>
-        <button aria-label="SEE ALL" className="border tracking-widest font-semibold border-black w-40 h-10 hidden md:inline">
+        <button
+          aria-label="SEE ALL"
+          className="border tracking-widest font-semibold border-black w-40 h-10 hidden md:inline  hover:bg-black hover:text-white transition-all ease-in-out duration-300">
           SEE ALL
         </button>
       </div>
