@@ -1,8 +1,9 @@
 type Props = {
   toggleNav: () => void
+  open: boolean
 }
 
-function NavBar({ toggleNav }: Props) {
+function NavBar({ toggleNav, open }: Props) {
   const navLinks = [
     { text: "About", link: "#" },
     { text: "Careers", link: "#" },
@@ -13,17 +14,22 @@ function NavBar({ toggleNav }: Props) {
 
   return (
     <nav
-      className="flex flex-row justify-between items-center w-[100%]  
+      className="flex flex-row justify-between items-center w-[100%] 
+      lg:mt-1 
       animate-fade-down animate-duration-[600ms] animate-delay-0 animate-ease-in z-3
     ">
-      <p className="font-Alata font-medium text-[1.75rem] md:text-[2.3rem]  2xl:text-[3.2rem] text-white">loopstudios</p>
+      <p className="font-Alata font-medium text-[1.75rem] md:text-[2.3rem] lg:text-[2.4rem] lg:ml-[.6rem]  2xl:text-[3.2rem] text-white">
+        loopstudios
+      </p>
 
       <button
         onClick={toggleNav}
         aria-label="open mobile navigation"
-        className="w-6 h-4 mt-1 bg-hamburgericon bg-cover md:hidden z-10"></button>
+        className={
+          "mt-1 bg-[length:100%_100%] md:hidden z-10 " + (open ? " bg-closeIcon w-6 h-6" : " bg-hamburgericon w-6 h-4")
+        }></button>
 
-      <ul className="md:flex flex-row font-semibold text-[1rem] 2xl:text-[1.2rem] 2xl:gap-[3rem] gap-[1.75rem] mr-1 pt-3 text-white hidden">
+      <ul className="md:flex flex-row font-semibold text-[1rem] 2xl:text-[1.2rem] 2xl:gap-[3rem] lg:mr-[-0.4rem] gap-[1.75rem] mr-1 pt-3 text-white hidden">
         {navLinks.map((link) => (
           <li key={link.link} className="relative">
             {" "}

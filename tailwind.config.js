@@ -35,6 +35,7 @@ export default {
         lgPocket: "url('/desktop/image-pocket-borealis.jpg')",
         smFisheye: "url('/mobile/image-fisheye.jpg')",
         lgFisheye: "url('/desktop/image-fisheye.jpg')",
+        closeIcon: "url('/icons/icon-close.svg')",
       },
     },
   },

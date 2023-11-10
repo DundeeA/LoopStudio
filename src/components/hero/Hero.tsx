@@ -11,12 +11,12 @@ function Hero() {
     <header className="h-[97.5vh] bg-cover bg-heroimage pt-7 flex flex-col items-center md:h-[80vh] md:bg-largeheroimage md:pt-11 z-1">
       <div className=" w-[87.5vw] lg:w-[77.5vw] md:block flex flex-col items-center">
         {mobileNavOpen && <MobileNav />}
-        <NavBar toggleNav={toggleNav} />
+        <NavBar toggleNav={toggleNav} open={mobileNavOpen} />
 
         {!mobileNavOpen && (
           <h1
             className="font-Josefin font-medium text-4xl block max-w-fit text-white tracking-wider border-2 border-white border-solid  pt-7 pb-3  pl-6 pr-9 mt-[9.5rem]
-               md:text-[3.3rem] md:leading-[3.4rem] lg:pt-11 lg:mt-[7.7rem] lg:text-[4.25rem] lg:leading-[4.3rem] lg:pb-8 lg:pl-10  lg:mr-0 md:pr-24 2xl:text-[5.5rem]  2xl:leading-[6rem]
+               md:text-[3.3rem] md:leading-[3.4rem] lg:pt-[2.5rem] lg:mt-[7.4rem] lg:text-[4.25rem] lg:leading-[4.25rem] lg:pr-[5.8rem] lg:pb-[2.1rem] lg:pl-[2.3rem] lg:ml-2  lg:mr-0 md:pr-24 2xl:text-[5.5rem]  2xl:leading-[6rem]
                smd:text-[3.5rem] smd:leading-[3rem]
               animate-fade-right animate-duration-[600ms] animate-delay-0 animate-ease-in
         ">
