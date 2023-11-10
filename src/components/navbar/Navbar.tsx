@@ -30,8 +30,8 @@ function NavBar({ toggleNav, open }: Props) {
         }></button>
 
       <ul className="md:flex flex-row font-semibold text-[1rem] 2xl:text-[1.2rem] 2xl:gap-[3rem] lg:mr-[-0.4rem] gap-[1.75rem] mr-1 pt-3 text-white hidden">
-        {navLinks.map((link) => (
-          <li key={link.link} className="relative">
+        {navLinks.map((link, index) => (
+          <li key={link.link + index} className="relative">
             {" "}
             <a
               href={link.link}

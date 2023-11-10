@@ -20,8 +20,8 @@ function Footer() {
         <p className="font-Alata font-medium text-[1.75rem] text-white md:mt-3">loopstudios</p>
 
         <ul className="mt-7 text-center md:flex md:gap-[1.96rem] md:mt-5 mb-4 relative text-white">
-          {navLinks.map((link) => (
-            <li key={link.link} className="relative">
+          {navLinks.map((link, index) => (
+            <li key={link.link + index} className="relative">
               {" "}
               <a
                 href={link.link}
@@ -37,8 +37,8 @@ function Footer() {
 
       <div className="flex flex-col items-center md:items-end   md:mr-[2rem]  lg:mr-[10.3rem]">
         <ul className="flex flex-row space-x-4 mt-9 md:mt-5 items-center">
-          {socialLinks.map((link) => (
-            <li key={link.label} className="relative">
+          {socialLinks.map((link, index) => (
+            <li key={link.label + index} className="relative">
               {" "}
               <a
                 href={link.link}
