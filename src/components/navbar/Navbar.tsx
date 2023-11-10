@@ -1,10 +1,8 @@
-import { useState } from "react"
-import MobileNav from "./mobileNav"
-function NavBar() {
-  const [navOpen, setNavOpen] = useState<boolean>(false)
+type Props = {
+  toggleNav: () => void
+}
 
-  const toggleNav = () => setNavOpen(!navOpen)
-
+function NavBar({ toggleNav }: Props) {
   const navLinks = [
     { text: "About", link: "#" },
     { text: "Careers", link: "#" },
@@ -16,9 +14,9 @@ function NavBar() {
   return (
     <nav
       className="flex flex-row justify-between items-center w-[100%]  
-      animate-fade-down animate-duration-[600ms] animate-delay-0 animate-ease-in
+      animate-fade-down animate-duration-[600ms] animate-delay-0 animate-ease-in z-3
     ">
-      <p className="font-Alata font-medium text-[1.75rem] md:text-[2.3rem]  2xl:text-[3.2rem] z-10  text-white">loopstudios</p>
+      <p className="font-Alata font-medium text-[1.75rem] md:text-[2.3rem]  2xl:text-[3.2rem] text-white">loopstudios</p>
 
       <button
         onClick={toggleNav}
@@ -39,8 +37,6 @@ function NavBar() {
           </li>
         ))}
       </ul>
-
-      {navOpen && <MobileNav />}
     </nav>
   )
 }

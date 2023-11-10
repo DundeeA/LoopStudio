@@ -45,7 +45,7 @@ function Footer() {
                 aria-label={link.label}
                 className="after:absolute after:content-['']  after:scale-x-0 hover:after:scale-x-100  after:w-[60%] after:h-[2px] after:bg-white after:top-8 after:left-[20%]
                after:transition-all after:ease-in-out after:duration-300 after:transform after:origin-center">
-                <img src={link.image} alt={link.label} />
+                <img src={link.image} alt={link.label} className="w-50  h-50" />
               </a>
             </li>
           ))}
