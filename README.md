@@ -8,7 +8,7 @@ This is my solution to the [Loopstudios landing page challenge](https://www.fron
 
 ### Links
 
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://loopstudio-dun.netlify.app)
 
 ### Built with
 
