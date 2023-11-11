@@ -12,7 +12,7 @@ const CreationCard: React.FC<props> = ({ styles, title }) => {
       }>
       <h3
         className={
-          "text-[1.6rem] md:text-[1.3rem] lg:text-[1.7rem]  2xl:text-[2.4rem] 2xl:leading-10 md:top-[50%] font-thin w-[40%] mt-12 ml-5 leading-6 text-white md:relative lg:top-[70%]"
+          "text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem]  2xl:text-[2.1rem] 2xl:leading-10 md:top-[50%] font-thin w-[40%] mt-12 ml-5 leading-6 text-white md:relative lg:top-[70%]"
         }>
         {title}
       </h3>
